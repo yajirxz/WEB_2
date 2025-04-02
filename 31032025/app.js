@@ -77,6 +77,24 @@ function mostrarProductos(){
     console.log(inventario);
 }
 
+function buscarProductoPorNombre(){
+    let nombre = prompt("Ingrese el nombre del producto a buscar:");
+    let encontrado = false;
+    for (let i=0; i < inventario.length; i++){
+        if (inventario[i].nombre.toLowerCase() === nombre.toLowerCase()){
+            alert(`Producto encontrado:\n` +
+                  `Nombre: ${inventario[i].nombre}\n` +
+                  `Cantidad: ${inventario[i].cantidad}\n` +
+                  `Precio: $${inventario[i].precio}`);
+            encontrado = true;
+            break;
+        }
+    }
+    if (!encontrado){
+        alert("Producto no encontrado");
+    }
+}
+
 
 inciarPrograma();
 
