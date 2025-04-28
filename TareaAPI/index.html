@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Whatsapp</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mensajes Automaticos</h1>
+    </header>
+
+    <div style="margin-top: 50px;" >
+        <div>
+            <label>Nombre:</label>
+                <input type="text" id="input1" required maxlength="100" placeholder="Nombre completo" >
+            
+            <label>Correo: </label>
+                <input type="email"  placeholder="Ingresa correo" id="input2" required>
+                <label>Celular:</label>
+<input type="tel" id="input5" required placeholder="Ej. 525615138450">
+
+<label>Mensaje:</label>
+<input type="text" id="input6" required placeholder="Escribe tu mensaje">
+
+            <label > Institución</label>
+                <input type="text" id="input3"required  list="listaEscuelas" >
+                <datalist id="listaEscuelas" >
+                    <option value="UNAM">UNAM</option>
+                    <option value="IPN">IPN</option>
+                    <option value="UAM">UAM</option>
+                    <option value="UVM">UVM</option>
+
+                </datalist>
+    
+            <br>
+            <button onclick="mensajeWhats()">Enviar</button>
+                
+            <div  style="text-align: center;" id="qr-code" >
+               <!-- Imagen de QR  -->
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+
+
+
+</html>
