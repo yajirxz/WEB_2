@@ -1,0 +1,19 @@
+{
+  "name": "28042025",
+  "version": "1.0.0",
+  "description": "proyecto de node implementando de manera nativa http",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "WEB-2"
+  },
+  "keywords": [
+    "node.js",
+    "http"
+  ],
+  "author": "yajirxz",
+  "license": "ISC"
+}

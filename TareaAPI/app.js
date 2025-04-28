@@ -13,7 +13,7 @@ function mensajeWhats() {
     }
 
     // Personalizamos el mensaje
-    const mensajePersonal = `Hola, ${name}. Tú Correo es: ${email}. ¿Está correcto? ${mensaje}`;
+    const mensajePersonal = `Hola, ${name}. Tú Correo es: ${email}. ¿Está correcto?. ${mensaje}`;
     const mensajeCodificado = encodeURIComponent(mensajePersonal); 
 
     // URL de la API de WhatsApp 
