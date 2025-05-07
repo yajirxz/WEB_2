@@ -1,0 +1,19 @@
+//importar express
+const express = require('express');
+const rutas = require('./routes/index4.js');
+
+
+//intanciar express
+const app = express();
+
+//configuracion del server de uso de rutas
+app.use("/",rutas);
+
+//Puerto
+const port = 3003;
+
+app.listen(port, () => {
+    console.log(`https://localhost:${port}`);
+});
+
+

@@ -1,14 +1,16 @@
 const express = require('express');
 const rutas = require('./routes');
 
-
 //instanciamos express
 const app = express();
+
+// Configuración de middleware para JSON
+app.use(express.json());
+
 //configuracion del server uso de rutas
 app.use("/",rutas);
 //puerto
 const port = 3050;
-
 
 //escucha del servidor 
 app.listen(port,()=>{
