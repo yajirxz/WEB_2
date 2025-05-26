@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listar</h1>
+    <table border="2">
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Email</td>
+            <td>Acciones</td>
+        </tr>
+        <%users.forEach(user=>{ %>
+            <tr>
+                <td> <%= user.id    %> </td>
+                <td> <%= user.name  %> </td>
+                <td> <%= user.email %> </td>
+                <td>
+                    <a href="/edit/<%=user.id%>">Editar</a>
+                    <a href="/delete/<%=user.id%>">Eliminar</a>
+                    http://127.0.0.1
+                </td>
+                <%});%>
+            </tr>
+
+    </table>
+
+<%# Agregar usuario %>
+    <h2>Agregar Usuario</h2>
+    <form action="/add" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" required maxlength="45" placeholder="Nombre">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required maxlength="45" required placeholder="Email">
+        <br><br>
+        <button type="submit">Agregar</button>  
+    </form>
+    
+</body>
+</html>
