@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../app');
+const db = require('../config/db');
 
 // Mostrar lista
 router.get('/', (req, res) => {
